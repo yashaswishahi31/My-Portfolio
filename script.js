@@ -32,7 +32,11 @@ $(document).ready(function () {
 
     // typing animation script
     var typed = new Typed(".typing",{
+<<<<<<< HEAD
         strings: ["Frontend Developer","Coder","FullStack MERN Developer"],
+=======
+        strings: ["Frontend Developer","Coder","Web Developer"],
+>>>>>>> 06568a1615493ccd783b6460640bbcab40ff0a99
         typeSpeed: 100,
         backSpeed: 60,
         loop: true,
@@ -40,7 +44,11 @@ $(document).ready(function () {
         
     });
     var typed = new Typed(".typing-2",{
+<<<<<<< HEAD
         strings: ["Web Developer","Coder","FullStack MERN Developer"],
+=======
+        strings: ["Web Developer","Coder","Web Developer"],
+>>>>>>> 06568a1615493ccd783b6460640bbcab40ff0a99
         typeSpeed: 100,
         backSpeed: 60,
         loop: true,
@@ -48,6 +56,7 @@ $(document).ready(function () {
 });
 
 
+<<<<<<< HEAD
 var myproj=[
     ['./img4.webp','Hotel Booking App','https://github.com/yashaswishahi31/Yashaswi-booking-app','https://yashaswi-booking-app.onrender.com/'] ,
     ['./img5.webp','Restaurant App','https://github.com/yashaswishahi31/SSv_Restaurant','https://s-sv-restaurant.vercel.app/'] ,
@@ -57,6 +66,14 @@ var myproj=[
   ['./img3.jpg','TO DO LIST','https://github.com/yashaswishahi31/To-Do-List','https://github.com/yashaswishahi31/To-Do-List'],
 
 
+=======
+var myproj=[['./img1.jpg','Tic Tak Toe','https://github.com/yashaswishahi31/tic_tak_toe','yashaswishahi31.github.io/tic_tak_toe/'] ,
+ ['./img2.jpg','Quiz','https://github.com/yashaswishahi31/quiz','yashaswishahi31.github.io/quiz/'] ,
+  ['./img3.jpg','TO DO LIST','https://github.com/yashaswishahi31/To-Do-List','https://github.com/yashaswishahi31/To-Do-List'],
+//   ['./images/proj1.png','Tic Tak Toe','https://github.com/yashaswishahi31/tic_tak_toe','yashaswishahi31.github.io/tic_tak_toe/'] ,
+//   ['./images/proj2.png','Quiz','https://github.com/yashaswishahi31/quiz','yashaswishahi31.github.io/quiz/'] ,
+//   ['./images/proj2.png','Quiz','https://github.com/yashaswishahi31/quiz','yashaswishahi31.github.io/quiz/']
+>>>>>>> 06568a1615493ccd783b6460640bbcab40ff0a99
  ];
 const projcon=document.getElementsByClassName("projcon")[0];
 
