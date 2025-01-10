@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     // typing animation script
     var typed = new Typed(".typing",{
-        strings: ["Your Skill","Your Hobby","Your Passion","Your Proficiency"],
+        strings: ["Frontend Developer","Coder","FullStack MERN Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true,
@@ -40,12 +40,43 @@ $(document).ready(function () {
         
     });
     var typed = new Typed(".typing-2",{
-        strings: ["Your Skill","Your Hobby","Your Passion","Your Proficiency"],
+        strings: ["Web Developer","Coder","FullStack MERN Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true,
     });
 });
+
+
+var myproj=[
+    ['./img4.webp','Hotel Booking App','https://github.com/yashaswishahi31/Yashaswi-booking-app','https://yashaswi-booking-app.onrender.com/'] ,
+    ['./img5.webp','Restaurant App','https://github.com/yashaswishahi31/SSv_Restaurant','https://s-sv-restaurant.vercel.app/'] ,
+    ['./img6.webp','PDF Generator','https://github.com/yashaswishahi31/PDF_Generator','https://github.com/yashaswishahi31/PDF_Generator'],
+    ['./img1.jpg','Tic Tak Toe','https://github.com/yashaswishahi31/tic_tak_toe','yashaswishahi31.github.io/tic_tak_toe/'] ,
+ ['./img2.jpg','Quiz','https://github.com/yashaswishahi31/quiz','yashaswishahi31.github.io/quiz/'] ,
+  ['./img3.jpg','TO DO LIST','https://github.com/yashaswishahi31/To-Do-List','https://github.com/yashaswishahi31/To-Do-List'],
+
+
+ ];
+const projcon=document.getElementsByClassName("projcon")[0];
+
+for(let i=0 ; i<myproj.length;i++){
+    const proj=document.createElement("div");
+    proj.setAttribute('class','projc');
+    proj.setAttribute('data-aos','fade-up');
+    const img=document.createElement("img");
+    img.setAttribute('src',myproj[i][0]);
+    img.addEventListener('click' , ()=>{
+        window.open(myproj[i][3]);
+    })
+    proj.appendChild(img);
+    const text=document.createElement("a");
+    text.setAttribute('class','projname');
+    text.setAttribute('href',myproj[i][2]);
+    text.innerHTML=myproj[i][1];
+    proj.appendChild(text);
+    projcon.appendChild(proj);
+}
 
      // Scroll to top button script
       const btnScrollToTop = document.querySelector("#btnScrollToTop");

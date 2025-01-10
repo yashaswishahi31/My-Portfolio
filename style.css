@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background: url("./img.avif") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -28,6 +28,7 @@ body{
 
 .navbar {
     position: fixed;
+    background: #fc3d7c;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
@@ -42,7 +43,7 @@ body{
 
 .navbar.sticky::before {
     content: '';
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+    background: url("") ;
     position: absolute;
     opacity: 1;
     top: -10px;
@@ -66,7 +67,7 @@ body{
 }
 
 .navbar .logo a span {
-    color: #23b410;
+    color: #140f10;
     transition: all 0.3s ease;
 }
 
@@ -88,7 +89,7 @@ body{
 
 .navbar .menu li a {
  
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s;
@@ -100,7 +101,8 @@ body{
 }
 
 .navbar .menu a:after {    
-    background: none repeat scroll 0 0 transparent;
+    background: none repeat scroll 0 0 transparent ;
+    background-color: #cf4e55;
     bottom: 0;
     content: "";
     display: block;
@@ -116,11 +118,11 @@ body{
     left: 0; 
   }
 .navbar .menu li a:hover {
-    color: #23b410;
+    color: #0a0a0a;
 }
 
 .navbar.sticky .menu li a:hover {
-    color: white;
+    color: rgb(10, 10, 10);
 }
 
 .menu-btn{
@@ -129,24 +131,34 @@ body{
     cursor: pointer;
     display: none;
 }
+.home .home-content{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+
+justify-content: space-between;
+}
 
 .home {
-    display: flex;
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    display: inline-block;
+    background: url("/images/img.avif") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    /* width:100vh; */
+    width:100%;
     color: white;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.home .max-width {
-    margin: auto 0 auto 40px;
-}
+ .home .max-width {
+    margin: auto 0 auto 30px;
+    /* margin:0 0 0 0; */
+ }
 
 .home .max-width .home-content{
-    padding-top: 220px;
+    padding-top:120px;
 }
 
 .home .home-content .text-1 {
@@ -165,9 +177,31 @@ body{
 }
 
 .home .home-content .text-3 span {
-    color: #25e70c;
+    color: #cf4e55;
     font-weight: 500;
 }
+
+
+
+ /* .home  .home-content .right img{
+    /* margin-left: auto; */
+    /* padding-top: 30px; */
+    /* padding: 15px 10px ; */
+    /* padding-right: 5px; */
+    /* padding-left: 35px; */
+    /* margin-right: 0px; */
+    /* padding-bottom: 25px; */
+    /* align-items: end; */
+    /* margin-bottom: 90px;
+     height: 350px;
+     width: 350px;
+     object-fit: cover;
+     border-radius: 16px;
+     transition: all 0.3s ease;
+ }
+ .home .home-content .right img:hover{
+    transform: scale(1.05);
+} */ 
 
 /* all similar styling */
 section{
@@ -186,7 +220,7 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    color: #23b410;
+    color: #cf4e55;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 80px;
@@ -200,7 +234,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: green;
+    background: #cf4e55;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -208,14 +242,14 @@ section .title::after{
     bottom: -14px;
     left: 50%;
     font-size: 20px;
-    color: #23b410;
+    color: #cf4e55;
     padding: 5px;
     background: black;
     transform: translateX(-50%);
 }
 /* about section styling */
 .about{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background: url("/images/img.avif");
     background-size: 2000px;
 }
 .about .title::after{
@@ -244,7 +278,7 @@ section .title::after{
     margin-bottom: 10px;
  }
  .about .about-content .right .text span{
-     color: #23b410;
+     color: #cf4e55;
  }
  .about .about-content .right .paragraph{
      color: white;
@@ -256,25 +290,81 @@ section .title::after{
  .about .about-content .right a{
     display: inline-block;
     background: none;
-    color: #23b410;
+    color: #cf4e55;
     margin-top: 20px;
     font-size: 20px;
     font-weight: 500;
     padding: 5px 30px;
     border-radius: 6px;
-    border: 2px solid #23b410;
+    border: 2px solid #cf4e55;
     transition: all 0.3s ease;
  }
  .about .about-content .right a:hover{
      color: white;
      background:none;
  }
+
+
+
+ #projects{
+    width: 100%;
+    height: max-content;
+    margin: 150px auto;transition: all 0.5s;
+    color:white;
+}
+
+.projcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projc{
+    width:400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+background: rgba(255, 255, 255, 0.12);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.projc img{
+    margin-top: 10px;
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.projname{
+    color:#006598;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+background: rgb(255, 255, 255);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(0, 248, 255, 0.66);
+}
  
  /* services styling */
- .services{
+ /* .services{
      color: white;
      background:black;
-     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+     background: url("/images/img.avif");
      background-size: 2000px;
  }
  .services .title::before{
@@ -284,6 +374,23 @@ section .title::after{
      background: black;
      content: "What I provide";
  }
+
+ /* .services .serv-content  a{
+    display: inline-block;
+    background: none;
+    color: #23b410;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 30px;
+    border-radius: 6px;
+    border: 2px solid #23b410;
+    transition: all 0.3s ease;
+ }
+ .services .serv-content  a:hover{
+     color: white;
+     background:none;
+ } */
  .services .serv-content .card{
      width: calc(33% - 20px);
      text-align:center;
@@ -304,22 +411,23 @@ section .title::after{
 }
  .services .serv-content .card i{
      font-size: 50px; 
-     color: #23b410;
+     color: #fc3d7c;
      transition:color 0.3s ease;
  }
  .services .serv-content .card:hover i{
-    color: #23b410;
+    color:#fc3d7c ;
+    
 }
  .services .serv-content .card .text{
      font-size: 25px;
      font-weight: 500;
-     margin: 10px 0 7px 0;
- }
+     margin: 15px 0 7px 0;
+ } */
 
 /* Skills Section Styling */
 
 .skills{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background: url("/images/img.avif");
     background-size: 2000px;
 }
 
@@ -347,13 +455,13 @@ section .title::after{
  .skills .skills-content .left a{
     display: inline-block;
     background: none;
-    color: #23b410;
+    color: #fc3d7c;
     margin-top: 20px;
     font-size: 20px;
     font-weight: 500;
     padding: 5px 30px;
     border-radius: 6px;
-    border: 2px solid #23b410;
+    border: 2px solid #fc3d7c;
     transition: all 0.3s ease;
  }
  .skills .skills-content .left a:hover{
@@ -451,7 +559,7 @@ section .title::after{
 
  /* contact section styling */
  .contact{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background: url("/images/img.avif");
     background-size: 2000px;
  }
  .contact .title::after{
@@ -487,7 +595,7 @@ section .title::after{
  }
  .contact .contact-content .row i{
      font-size: 25px;
-     color: #23b410;
+     color: #fc3d7c;
  }
  .contact .contact-content .info .head{
      color: white;
@@ -517,11 +625,87 @@ section .title::after{
 .contact .right form .email{
     margin-left: 10px;
 }
+/* .column.right {
+    margin-left: 40px;
+}
 
+.profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid #ff1493;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+/* .column.right {
+    position: absolute; 
+    right: 0; 
+    margin-right: 50px; 
+}
+
+.profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid #070305;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.profile-container {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.diamond-image {
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    border: 4px solid #151213;
+    position: relative;
+    background: white;
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+.diamond-image img {
+    width: 420px;
+    height: 420px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    object-fit: cover;
+}
+
+/* Add pink accent corner */
+.accent-corner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #0b080a;
+    right: -25px;
+    top: -25px;
+    transform: rotate(45deg);
+}
 .contact .right form .field input,.contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border:2px solid #23b410;
+    border:2px solid #d6cace;
     color: white;
     border-radius: 6px;
     outline: none;
@@ -542,7 +726,7 @@ section .title::after{
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 0.1px solid #23b410;
+    border: 0.1px solid #c8babe;
     background: none;
     color: white;
     font-size: 20px;
@@ -552,12 +736,13 @@ section .title::after{
 }
 .contact .right form .button button:hover{
     background: none;
-    color: #23b410;
+    color: #fc3d7c;
 }
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+   /*background: url("/images/img.avif") ;*/
+   background:#fa3a7a;
     padding: 20px 23px;
     color: white;
 }
@@ -566,17 +751,17 @@ footer .text-center {
     text-align: center !important; }
 
 footer span a{
-    color: #23b410;
+    color: black;
     transition: color 0.3s ease;
 }
 footer i{
     padding-left: 10px;
     font-size: 25px;;
-    color: #23b410;
+    color: black;
     transition: color 0.3s ease;
 }
 footer span a:hover{
-    color: white;
+    color:white;
 }
 footer i{
     font-size: 27px;
@@ -594,9 +779,9 @@ footer i:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #124429;
+    background: black;
     box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
-    color: #25e70c;
+    color: white;
     border: none;
     outline: none;
     cursor: pointer;
@@ -604,7 +789,8 @@ footer i:hover{
 }
 
 #btnScrollToTop:active, #btnScrollToTop:hover{
-    background: #124429;
+    background: white;
+    color:black;
     box-shadow: 0px 0px 20px black;
 }
 
